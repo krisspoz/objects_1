@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+/*---Header---*/
+
+.container {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+}
+.container ul {
+	justify-content: flex-end;
+	list-style-type: none;
+	background-color: #0d7c87;
+}
+.container ul li > a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0 10px;
+	color: white;
+	font-size: 20px;
+	line-height: 70px;
+}
+.container ul li > a:hover {
+	transition: 0.5s;
+	color: #031e34;
+}
+
+/*--- Hero ---*/
+
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	padding-top: 50px;
+	box-sizing: border-box;
+	background-image: url("https://images.pexels.com/photos/1377/snow-mountains-winter-sport.jpg?w=940&h=650&auto=compress&cs=tinysrgb");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+.slogan {
+	background-color: rgba(49, 50, 52, 0.15);
+	width: 300px;
+	height: auto;
+	margin-top: -250px;
+	border-radius: 5px;
+}
+.slogan h1 {
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	text-shadow: 4px 4px 20px #0d7c87;
+	letter-spacing: 5px;
+}
+
+/*--- Gallery ---*/
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.images {
+	width: 400px;
+	height: 400px;
+	background-position: center;
+	margin-top: 40px;
+	border-radius: 5px;
+}
+.image1 {
+	background-image: url(https://images.pexels.com/photos/209878/pexels-photo-209878.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.image2 {
+	background-image: url(https://images.pexels.com/photos/38242/pexels-photo-38242.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.image3 {
+	background-image: url(https://images.pexels.com/photos/8798/snow-mountains-sky-couple.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.image4 {
+	background-image: url(https://images.pexels.com/photos/160171/pexels-photo-160171.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.image5 {
+	background-image: url(https://images.pexels.com/photos/56916/pexels-photo-56916.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.image6 {
+	background-image: url(https://images.pexels.com/photos/24397/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb);
+}
+.images:hover {
+	cursor: pointer;
+	opacity: 0.4;
+	transition: 0.3s;
+}
+
+/*--- Cards ---*/
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.layer {
+	width: 300px;
+	height: auto;
+	background-color: #1d4ba0;
+	margin: 40px 15px 0 0;
+	border-radius: 5px;
+	box-shadow: 4px 4px 20px #0d7c87;
+	display:flex
+	justify-content: center;
+	align-items: center;
+}
+.layer:hover {
+	background-color: #0d7c87;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.layer p {
+	font-size: 15px;
+	color: white;
+	padding: 10px;
+}
+
+/*--- Footer ---*/
+
+.data {
+	background-color: #0d7c87;
+	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+footer .center {
+	flex-grow: 2;
+}
+footer p {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 0 40px;
+}
+
+@media(max-width: 767px) {
+
+.container ul li > a {
+	font-size: 15px;
+	line-height: 50px;
+}
+.images {
+	width: 250px;
+	height: 250px;
+}
+footer p {
+	font-size: 15px;
+}
+}
